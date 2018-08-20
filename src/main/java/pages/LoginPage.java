@@ -33,7 +33,10 @@ public class LoginPage extends ParentPage {
     public WebElement titleInbox;
 
     @FindBy(xpath = ".//div[contains(text(),'Не удалось найти аккаунт Google')]")
-    public WebElement inValidTitle;
+    public WebElement inValidTitleRU;
+
+    @FindBy(xpath = ".//div[contains(text(),\"Couldn't find your Google Account\")]")
+    public WebElement inValidTitleEN;
 
     public void openLoginPage(String url){
         getUrl(driver, url);

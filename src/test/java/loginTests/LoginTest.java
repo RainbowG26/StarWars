@@ -48,7 +48,7 @@ public class LoginTest extends ParentTest {
         loginPage.clickBtnSingIn();
         loginPage.enterLoginToInput("inValidLogin");
         loginPage.enterBtnNext();
-        soft.assertThat(lib.getText(loginPage.inValidTitle))
+        soft.assertThat(lib.getText(loginPage.inValidTitleRU))
                 .as("Expected invalid title - Не удалось найти аккаунт Google")
                 .isEqualTo("Не удалось найти аккаунт Google");
     }
